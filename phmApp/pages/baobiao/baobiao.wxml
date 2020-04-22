@@ -1,0 +1,7 @@
+<!--pages/baobiao/baobiao.wxml-->
+<view class='box'>
+<button style="width:100%"bindtap="navToPre1">日报表</button>
+</view>
+<view class='box'>
+<button style="width:100%"bindtap="navToPre2">月报表</button>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/baojing/baojing.wxml-->
+<text>报警</text>
+<view class="box">
+<view>错误的机组信息</view>
+</view>
+<view wx:for="{{baojingdata}}">
+<view>第{{index+1}}次报警,机器：{{item.machine}}</view><!--只显示了label=0的是数据的machine-->
+</view>
+
+<view class="box">
+<view>内圈故障</view>
+</view>
+<view wx:for="{{baojingdata2}}">
+<view>第{{index+1}}次报警,机器：{{item.machine}}</view><!--只显示了label=0的是数据的machine-->
+</view>
+<view class="box">
+<view >外圈故障</view>
+</view>
+<view wx:for="{{baojingdata3}}">
+<view>第{{index+1}}次报警,机器：{{item.machine}}</view><!--只显示了label=0的是数据的machine-->
+</view>
+

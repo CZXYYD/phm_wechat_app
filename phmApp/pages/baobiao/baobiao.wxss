@@ -1,0 +1,6 @@
+/* pages/baobiao/baobiao.wxss */
+.box {
+  margin: 10rpx;
+  padding: 40rpx;
+  border: 1px solid silver;
+}
