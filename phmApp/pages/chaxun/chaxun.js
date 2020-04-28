@@ -1,12 +1,6 @@
 // pages/chaxun/chaxun.js
-
-
-
-
 const db = wx.cloud.database();//初始云
 const _ = db.command
-
-
 
 Page({
   data: {
@@ -15,9 +9,6 @@ Page({
     inputmonth: '',
     inputyear: '',
   },
-
-
-
   getInput1: function (e) {
     this.setData({
 
@@ -26,7 +17,6 @@ Page({
     }),
     console.log(this.data.inputyear)
   },
- 
   getInput2: function (e) {
     this.setData({
 
@@ -59,10 +49,9 @@ Page({
       name: 'query',
       // 传给云函数的参数
       data: {
+        set:'machineData',
         year:a,//_this.data.inputyear,
         month: b,//_this.data.inputmonth,
-
-
         day:c//_this.data.inputday
       },
       //success函数为调用成功后的回调函数
@@ -80,13 +69,7 @@ Page({
       //fail函数为调用失败后的回调函数
       fail: console.error
     })
-
-
-
   },
-
-
-
 
   /**
    * 生命周期函数--监听页面加载

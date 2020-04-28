@@ -8,7 +8,8 @@ Page({
    */
   data: {
     machineInfo:[],                   //1个机组的40行数据
-    label: []                           //故障类型
+    label: [],                           //故障类型
+    informationdata:[]
   },
 
   /**
@@ -30,7 +31,7 @@ Page({
       },
       //success函数为调用成功后的回调函数
       success: function (res) {
-        console.log(res.result)
+        console.log(res.result.data)
         _this.setData({
           informationdata:res.result.data,
           //label: res.result.data[0].label      //设置label值，显示在页面上。setData函数会触发页面的重新渲染

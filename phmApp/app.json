@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/shikuang/shikuang",
-    "pages/baojing/baojing",
+    "pages/login/login",
     "pages/baobiao/baobiao",
+    "pages/baojing/baojing",
+    "pages/shikuang/shikuang",
     "pages/day/day",
     "pages/information/information",
     "pages/month/month",
